@@ -20,6 +20,7 @@ if scan == True :
     os.system('cd ../usr/bin')
     print(red+'your requested command is already exist !')
     os.system('chmod +x '+command)
+    os.system('cd')
                   
 
 else :
@@ -29,4 +30,5 @@ else :
     os.rename(command,'/data/data/com.termux/files/usr/bin/'+command)
 
     print(blue+'your command name '+red+command+blue+' is succuessfully activated !')
-    print(white)                                
+    print(white) 
+    os.system('cd')                               
