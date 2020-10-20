@@ -29,4 +29,4 @@ else :
     os.rename(command,'/data/data/com.termux/files/usr/bin/'+command)
 
     print(blue+'your command name '+red+command+blue+' is succuessfully activated !')
-                                        
+    print(white)                                
