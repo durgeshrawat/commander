@@ -1,6 +1,6 @@
 import os        
 with open('make_command','w') as file :
-    file.write('cd commander && python .commander && cd')
+    file.write('cd && cd commander && python .commander && cd')
 os.system('chmod +x make_command')
 os.rename('make_command','/data/data/com.termux/files/usr/bin/make_command')
 print('\033[0;32;40m commander INSTALLED SUCCESFULLY !')    
