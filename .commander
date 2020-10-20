@@ -1,9 +1,32 @@
-import os        
-with open('make_command','w') as file :
-    file.write('python .commander.py')
-os.system('chmod +x make_command')
-os.rename('make_command','/data/data/com.termux/files/usr/bin/make_command')
-print('\033[0;32;40m commander INSTALLED SUCCESFULLY !')    
-print(' DESCRIPTION : - \n to make a command just give command\033[1;33;40m make_command\033[0;32;40m \n @geekH4CK3R \033[0;37;40m ')
-                                               
-               
+             
+# python program by DURGESH-0000rawat
+import os
+white='\033[0;37;40m'
+red='\033[0;31;40m'
+green='\033[0;32;40m'
+yellow='\033[0;33;40m'
+blue='\033[0;34;40m'
+purple='\033[0;35;40m'
+cyan='\033[0;36;40m'
+command = input('enter command name'+yellow+'(your choice)'+white+':' )
+                                                            
+print('your command name is '+command)
+real_command = input('enter your real command i.e.'+yellow+'pkg update'+white+': ')
+print('command generating..')
+
+scan = os.path.isfile('data/data/com.termux/files/usr/bin/'+command)
+                                                        
+if scan == True :
+    os.system('cd ../usr/bin')
+    print(red+'your requested command is already exist !')
+    os.system('chmod +x '+command)
+                  
+
+else :
+    with open(command,'w') as file:
+        file.write(real_command)
+    os.system('chmod +x '+command)
+    os.rename(command,'/data/data/com.termux/files/usr/bin/'+command)
+
+    print(blue+'your command name '+red+command+blue+' is succuessfully activated !')
+                                        
