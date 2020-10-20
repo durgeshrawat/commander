@@ -16,7 +16,7 @@ print ('+#+        +#+    +#+ +#+       +#+ +#+       +#+ +#+     +#+ +#+  +#+#+
 print (':+:    :+: :+:    :+: +:+       +:+ +:+       +:+ :+:     :+: :+:   :+:+: :+:    :+: :+:        :+:     :::')
 print (' ::::::::   ::::::::  :::       ::: :::       ::: :::     ::: :::     ::: :::::::::  :::::::::  :::      ::')
 print(white)
-print(' version 1.0 \n release date 20|10|2020 monday\n')
+print(yellow+' version 1.0 \n'+white)
 command = input('enter command name'+yellow+'(your choice)'+white+':' )
 
 
