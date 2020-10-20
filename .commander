@@ -1,0 +1,9 @@
+import os        
+with open('make_command','w') as file :
+    file.write('python .commander.py')
+os.system('chmod +x make_command')
+os.rename('make_command','/data/data/com.termux/files/usr/bin/make_command')
+print('\033[0;32;40m commander INSTALLED SUCCESFULLY !')    
+print(' DESCRIPTION : - \n to make a command just give command\033[1;33;40m make_command\033[0;32;40m \n @geekH4CK3R \033[0;37;40m ')
+                                               
+               
