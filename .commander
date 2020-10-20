@@ -1,4 +1,3 @@
-             
 # python program by DURGESH-0000rawat
 import os
 white='\033[0;37;40m'
@@ -8,20 +7,31 @@ yellow='\033[0;33;40m'
 blue='\033[0;34;40m'
 purple='\033[0;35;40m'
 cyan='\033[0;36;40m'
+print(green)
+print (' ::::::::   ::::::::  ::::    ::::  ::::    ::::      :::     ::::    ::: :::::::::  :::::::::: :::::::::')
+print (':+:    :+: :+:    :+: +:+:+: :+:+:+ +:+:+: :+:+:+   :+: :+:   :+:+:   :+: :+:    :+: :+:        :+:    :+:')
+print ('+:+        +:+    +:+ +:+ +:+:+ +:+ +:+ +:+:+ +:+  +:+   +:+  :+:+:+  +:+ +:+    +:+ +:+        +:+    +:+')
+print ('+#+        +#+    +:+ +#+  +:+  +#+ +#+  +:+  +#+ +#++:++#++: +#+ +:+ +#+ +#+    +:+ +#++:++#   +#++:++#:')
+print ('+#+        +#+    +#+ +#+       +#+ +#+       +#+ +#+     +#+ +#+  +#+#+# +#+    +#+ +#+        +#+    +#+')
+print (':+:    :+: :+:    :+: +:+       +:+ +:+       +:+ :+:     :+: :+:   :+:+: :+:    :+: :+:        :+:     :::')
+print (' ::::::::   ::::::::  :::       ::: :::       ::: :::     ::: :::     ::: :::::::::  :::::::::  :::      ::')
+print(white)
+print(' version 1.0 \n release date 20|10|2020 monday\n')
 command = input('enter command name'+yellow+'(your choice)'+white+':' )
-                                                            
+
+
 print('your command name is '+command)
 real_command = input('enter your real command i.e.'+yellow+'pkg update'+white+': ')
 print('command generating..')
 
 scan = os.path.isfile('data/data/com.termux/files/usr/bin/'+command)
-                                                        
+
 if scan == True :
     os.system('cd ../usr/bin')
     print(red+'your requested command is already exist !')
     os.system('chmod +x '+command)
     os.system('cd')
-                  
+
 
 else :
     with open(command,'w') as file:
@@ -30,5 +40,5 @@ else :
     os.rename(command,'/data/data/com.termux/files/usr/bin/'+command)
 
     print(blue+'your command name '+red+command+blue+' is succuessfully activated !')
-    print(white) 
-    os.system('cd')                               
+    print(white)
+    os.system('cd')
