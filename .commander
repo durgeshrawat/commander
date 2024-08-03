@@ -1,4 +1,4 @@
-# python program by DURGESH-0000rawat
+# python program by DURGESH RAWAT
 import os
 white='\033[0;37;40m'
 red='\033[0;31;40m'
